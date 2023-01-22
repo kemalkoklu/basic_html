@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            the title of my website
+        </title>
+    </head>
+    <body>
+        <audio  controls autoplay muted loop src="no-mercy.mp3"></audio>
+        <!--  controls allows yout to control the audio ,autoplay is plays the audio file when the tab is opened ,mute is mutes the audio ,loop is looping  -->
+        <!--  if you want to add multiple sources of 1 audio  use instead -->
+        <audio controls autoplay muted loop>
+            <source src="no-mercy.mp3">
+            <source src="no-mercy.wav">
+            <!-- if the browser does not supports all of the file types you can write message-->
+            Your browser has not supports HTML 5 audio
+        </audio>
+    </body>
+</html>

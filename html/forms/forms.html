@@ -1,0 +1,85 @@
+<!DOCTYPE=html>
+<html>
+    <head>
+        <title>
+            the title of my website
+        </title>
+    </head>
+    <body>
+        <form action="action_page.php" method="post">
+        <div>
+         <label for="name">Enter your name</label>        
+        <input type="text" id="name" name="name" placeholder="cannot be blank" required> <!-- type=for which data will be enter, id it's id--> <!-- name = The "name" attribute is used in HTML forms to identify the form control and associate it with a specific data value. The name attribute is used along with the value attribute to send data to the server when the form is submitted.-->
+            <!-- required means that are cannot be blank-->
+    </div>
+
+    <div>
+        <label for="surname">Enter your surname</label>
+        <input type="text" name="surname" id="surname" placeholder="cannot be blank" required> <!--  placeholder is specifies a short hint that describes the expected value of an input field  -->
+    </div>
+
+    <div>
+        <label for="password">Enter your password</label>
+        <input type="password" name="password" id="surname" placeholder="cannot be empty" required> <!--  if you define type=as password it cencors characters  -->
+
+    </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="cannot be empty" required> <!-- type=email requires email. if you dont enter an email adress it dont allows the data -->
+    </div>
+
+    <div>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" name="phone" id="phone" placeholder="cannot be empty" required pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <!-- with patter it just allows numbers [0-9] is means which characters can be enter, {3} means you can enter 3 characters for that field-->
+
+    </div>
+
+    <div>
+        <label for="bdate">Enter your birthday</label>
+        <input type="date" name="bdate" id="bdate"> <!--  it is for date creates a date window -->
+    </div>
+    <div>
+        <label for="pcs">pcs</label>
+        <input type="number" name="pcs" id="pcs" value="1" max="9999" min="1" > <!--  type=number only allows number, value means default, max means maximum value can take that field, min means minimum value can take that field   -->
+    </div>
+
+    <div>
+        <label for=""></label>
+    </div>
+
+    <div>
+        <input type="submit"> <br> <!-- type=submit is submit button-->
+        <input type="reset"> <!-- type=reset is reset button -->
+    </div>
+
+    <div>
+        <label for="payment">
+            <select name="payment" id="payment">  <!-- select is for creating an drop-down lists -->
+                <option value="visa">visa</option> <!-- option is for creating options -->
+                <option value="mastercard" selected>mastercard</option> <!-- selected means default value-->
+                <option value="giftcard">giftcard</option>
+            </select>
+        </label>
+    </div>
+
+    <div>
+        <label for="title">Processor:</label> <!-- main title -->
+
+        <label>Intel</label> 
+        <input type="radio" name="title" value="Intel"> <!-- type=radio is for creating radiobuttons -->
+
+        <label>AMD</label>
+        <input type="radio" name="title" value="AMD">
+    </div>
+
+    <div>
+        <label for="checkbox">I allow the terms</label>
+        <input type="checkbox" id="checkbox" name="checkbox"> <!--type=checkbox for creating checkbox -->
+    </div>
+
+
+</form>
+
+    </body>
+</html>
